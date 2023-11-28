@@ -497,8 +497,8 @@ void validate_sequence(void)
  800059e:	f004 fc7f 	bl	8004ea0 <ssd1306_WriteString>
 		 			 	ssd1306_UpdateScreen();
  80005a2:	f004 fb79 	bl	8004c98 <ssd1306_UpdateScreen>
-		 			 	HAL_Delay(3000);
- 80005a6:	f640 30b8 	movw	r0, #3000	; 0xbb8
+		 			 	HAL_Delay(30000);
+ 80005a6:	f247 5030 	movw	r0, #30000	; 0x7530
  80005aa:	f000 fb6b 	bl	8000c84 <HAL_Delay>
 		 			 	incorrect=0;//the counter is reset
  80005ae:	4b12      	ldr	r3, [pc, #72]	; (80005f8 <validate_sequence+0x100>)
@@ -523,8 +523,8 @@ void validate_sequence(void)
  80005d0:	f004 fc66 	bl	8004ea0 <ssd1306_WriteString>
 	 		  ssd1306_UpdateScreen();
  80005d4:	f004 fb60 	bl	8004c98 <ssd1306_UpdateScreen>
-	 		  HAL_Delay(1000);
- 80005d8:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+	 		  HAL_Delay(10000);
+ 80005d8:	f242 7010 	movw	r0, #10000	; 0x2710
  80005dc:	f000 fb52 	bl	8000c84 <HAL_Delay>
 }
  80005e0:	bf00      	nop

@@ -130,7 +130,7 @@ void validate_sequence(void)
 		 			 	ssd1306_SetCursor(12, 12);
 		 			 	ssd1306_WriteString("Blocked", Font_16x26, White);
 		 			 	ssd1306_UpdateScreen();
-		 			 	HAL_Delay(3000);
+		 			 	HAL_Delay(30000);
 		 			 	incorrect=0;//the counter is reset
 		 				}
 		 		else{
@@ -139,7 +139,7 @@ void validate_sequence(void)
 	 		  ssd1306_SetCursor(12, 12);
 	 		  ssd1306_WriteString("Failed", Font_16x26, White);
 	 		  ssd1306_UpdateScreen();
-	 		  HAL_Delay(1000);
+	 		  HAL_Delay(10000);
 		 		}
 	 	  }
 
